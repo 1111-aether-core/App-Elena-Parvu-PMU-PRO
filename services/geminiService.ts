@@ -46,9 +46,16 @@ class GeminiService {
   constructor() {
     try {
       // Safety check: ensure process is defined before accessing it to prevent white screen crashes
-      // We use a try-catch block as the ultimate safety net for the reference error
       let apiKey = '';
-      if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
+      
+      // Check for Vite/Modern env
+      // @ts-ignore
+      if (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_KEY) {
+        // @ts-ignore
+        apiKey = import.meta.env.VITE_API_KEY;
+      }
+      // Check for legacy process.env
+      else if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
         apiKey = process.env.API_KEY;
       }
       

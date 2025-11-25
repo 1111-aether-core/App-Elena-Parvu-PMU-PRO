@@ -1,8 +1,7 @@
-
 {
   "name": "Elena Parvu Luxury Aesthetics",
   "short_name": "Elena Parvu",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#050505",
