@@ -31,3 +31,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         cname: shop.elenaparvu.it
+        keep_files: false
+        allow_empty_commit: false
