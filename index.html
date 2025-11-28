@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Elena Parvu | Luxury PMU & Tattoo</title>
+    <link rel="manifest" href="/assets/manifest-19sb8E_9.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lato:wght@300;400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#F9F1D8',
+                200: '#F0DEAA',
+                300: '#E6CB7D',
+                400: '#DDB853',
+                500: '#D4AF37', // Classic Gold
+                600: '#AA8C2C',
+                700: '#806921',
+                800: '#554616',
+                900: '#2B230B',
+              },
+              obsidian: '#050505',
+              charcoal: '#121212',
+            },
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+              cursive: ['Pinyon Script', 'cursive'],
+            },
+            boxShadow: {
+              'gold-glow': '0 0 15px rgba(212, 175, 55, 0.3)',
+              'gold-glare': '0 0 30px rgba(212, 175, 55, 0.6)',
+              'upwards': '0 -4px 20px rgba(0,0,0,0.5)',
+            },
+            animation: {
+              'shimmer': 'shimmer 3s linear infinite',
+              'marquee': 'marquee 120s linear infinite',
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { backgroundPosition: '200% center' },
+                '100%': { backgroundPosition: '-200% center' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #f5f5f5;
+        /* Prevent bounce effect on mobile */
+        overscroll-behavior-y: none;
+        /* Remove tap highlight color */
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Disable text selection for app-like feel, allow on inputs */
+      .no-select {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      input, textarea {
+        -webkit-user-select: text;
+        user-select: text;
+      }
+      
+      /* Utility to hide scrollbar but keep functionality */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      .gold-gradient-text {
+        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: shimmer 4s linear infinite;
+      }
+      .gold-border-gradient {
+        border-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728) 1;
+      }
+      
+      /* --- LUXURY SCROLLBAR SYSTEM --- */
+      
+      /* 1. GLOBAL SCROLLBAR (Main Page) - "Frozen Gold Glass" */
+      /* Extremely subtle, glass-like, only visible enough to function */
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(212, 175, 55, 0.15); /* Very faint gold glass */
+        border-radius: 4px;
+        backdrop-filter: blur(2px);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(212, 175, 55, 0.4); /* Frosted gold on hover */
+        box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+      }
+
+      /* 2. CUSTOM SCROLLBAR (AI Mode & Lists) - "Molten Gold" */
+      /* High contrast, metallic gradient, solid feel for the AI interface */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #050505; /* Deep Obsidian */
+        border-left: 1px solid #1a1a1a;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #806921 0%, #D4AF37 50%, #806921 100%); /* Metallic Gold Cylinder */
+        border-radius: 99px;
+        border: 1px solid #000;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #AA8C2C 0%, #F0DEAA 50%, #AA8C2C 100%); /* Bright Polish on Hover */
+      }
+      
+      /* Firefox Fallbacks */
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(212, 175, 55, 0.15) transparent;
+      }
+      .custom-scrollbar {
+        scrollbar-color: #D4AF37 #050505;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BqxoZpt-.js"></script>
+  </head>
+  <body class="no-select">
+    <div id="root"></div>
+  </body>
+</html>
