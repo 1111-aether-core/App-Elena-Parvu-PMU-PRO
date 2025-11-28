@@ -1,8 +1,7 @@
-name: Build & Deploy
+name: Build & Deploy (Disabled - using Vercel)
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
